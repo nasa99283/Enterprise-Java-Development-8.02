@@ -1,0 +1,37 @@
+<h3>Contact Page</h3>
+<hr>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+    <input type="text" placeholder="Name" formControlName="name"><br>
+    <p class="errMsg" *ngIf="nameInput.invalid && nameInput.touched">
+        Invalid name ..
+    </p>
+   
+    <input type="text" placeholder="Occupation" formControlName="occupation"><br>
+
+    <input type="email" placeholder="Email" formControlName="email"> <br>
+
+    <p class="errMsg" *ngIf="emailInput.invalid && emailInput.touched">
+        Invalid email ..
+    </p>
+
+    <!-- <p class="errMsg" *ngIf="emailInput.invalid && emailInput.touched">
+        Invalid email ..
+    </p> -->
+    <!-- <mat-error *ngIf="emailInput.hasError('email') && !emailInput.hasError('required')">
+        Please enter a valid email address
+      </mat-error> -->
+
+    <input type="text" placeholder="Subject" formControlName="subject"><br>
+    <textarea placeholder="Content" formControlName="content"></textarea><br><br>
+    <!-- <p class="errMsg" *ngIf="contentInput.invalid && contentInput.touched">
+        Invalid Content ..
+    </p> -->
+
+    <mat-error *ngIf="contentInput.invalid && contentInput.touched">Invalid content.</mat-error>
+
+
+<br>
+    <button type="submit" [disabled]="contactForm.invalid" mat-stroked-button color="submit-btn">Submit</button>
+    <button type="reset">Clear</button>
+</form>

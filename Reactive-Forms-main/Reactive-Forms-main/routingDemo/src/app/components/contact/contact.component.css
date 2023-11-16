@@ -1,0 +1,21 @@
+.errMsg{
+    background-color: rgba(255, 0, 0, 0.786);
+    width: 120px;
+    color: white;
+}
+p{
+    font-size: 12px;
+}
+input, textarea{
+    width: 300px;
+}
+
+.submit-btn {
+    background-color:  rgb(135, 165, 174); /* Your custom color code */
+    color: #ffffff; /* Text color for contrast */
+  }
+  
+  /* Hover effect (optional) */
+  /* .submit-btn:hover {
+    background-color:  rgb(70, 96, 104);
+  } */

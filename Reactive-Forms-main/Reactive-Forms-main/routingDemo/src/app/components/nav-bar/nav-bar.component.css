@@ -1,0 +1,27 @@
+/* .navBar{
+    display: flex;
+    font-weight: lighter;
+    justify-content: flex-end; /* Align the list to the right
+    align-items: center;
+    flex-grow: 1; /* Allow the list to take up remaining space
+    /* position: fixed;
+} */
+
+nav {
+    text-align: center;
+    justify-content: flex-start; 
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 10px;
+    margin-left: 120px;
+    text-decoration: none;
+  }

@@ -1,0 +1,12 @@
+.not-found-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+
+  button{
+    width: 100px;
+    color: rgb(95, 154, 134);
+  }
+  
